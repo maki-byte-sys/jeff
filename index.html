@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Filipino Food Bliss</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", Georgia, serif;
+      background: #121212;
+      color: #e0e0e0;
+    }
+
+    header {
+      background: rgba(18, 18, 18, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 18px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h2 {
+      margin: 0;
+      color: #ff6f61;
+      font-weight: 700;
+    }
+
+    nav a {
+      color: #e0e0e0;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      left: 0;
+      bottom: -5px;
+      background: #ff6f61;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 80px 60px;
+      background: #1e1e1e;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+      color: #ff6f61;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #cccccc;
+      max-width: 500px;
+    }
+
+    .hero-images {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      min-width: 300px;
+    }
+
+    .hero-images img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 8px solid #ff6f61;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    }
+    .recipes {
+      padding: 90px 50px;
+      background: #181818;
+    }
+
+    .recipes h2 {
+      text-align: center;
+      font-size: 38px;
+      margin-bottom: 60px;
+      color: #ff6f61;
+      letter-spacing: 1px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 35px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .grid a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card {
+      position: relative;
+      height: 340px;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      background: black;
+    }
+
+    .card:hover {
+      transform: translateY(-12px) scale(1.02);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.75);
+      transition: transform 0.6s ease, filter 0.6s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.12);
+      filter: brightness(1);
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0.1));
+    }
+
+    .card h3 {
+      position: absolute;
+      bottom: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0;
+      padding: 12px 26px;
+      background: rgba(255, 111, 97, 0.9);
+      color: white;
+      border-radius: 30px;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .center {
+      grid-column: span 2;
+      display: flex;
+      justify-content: center;
+    }
+
+    .center .card {
+      width: 420px;
+    }
+
+    footer {
+      background: #0d0d0d;
+      color: #cccccc;
+      text-align: center;
+      padding: 35px 20px;
+      font-size: 16px;
+    }
+
+    footer a {
+      color: #ff6f61;
+      text-decoration: underline;
+    }
+
+    footer a:hover {
+      color: #ff998a;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text p {
+        margin: auto;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .center {
+        grid-column: span 1;
+      }
+
+      .center .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>Filipino Food Bliss</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Best Filipino Food for Your Taste</h1>
+    <p>
+     food webpage activity
+    </p>
+  </div>
+
+  <div class="hero-images">
+    <img src="food3.jpg " alt="Filipino Food">
+  </div>
+</section>
+
+<section class="recipes">
+  <h2>Featured Filipino Recipes</h2>
+
+  <div class="grid">
+    <a href="carbonara.html">
+      <div class="card">
+        <img src="carbonara.jpg" alt="Carbonara">
+        <h3>Carbonara</h3>
+      </div>
+    </a>
+
+    <a href="spaghetti.html">
+      <div class="card">
+        <img src="spaghetti.jpg" alt="Spaghetti">
+        <h3>Spaghetti</h3>
+      </div>
+    </a>
+
+    <a href="pancit.html">
+      <div class="card">
+        <img src="pancit.jpg" alt="Pancit">
+        <h3>Pancit</h3>
+      </div>
+    </a>
+
+    <a href="palabok.html">
+      <div class="card">
+        <img src="palabok.jpg" alt="Palabok">
+        <h3>Palabok</h3>
+      </div>
+    </a>
+
+    <div class="center">
+      <a href="mango-graham.html">
+        <div class="card">
+          <img src="mango-graham.jpg" alt="Mango Graham">
+          <h3>Mango Graham</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>References for Cooking Methods & Recipes:</p>
+  <p>
+    <a href="https://www.kawalingpinoy.com/" target="_blank">Kawaling Pinoy</a> |
+    <a href="https://www.panlasangpinoy.com/" target="_blank">Panlasang Pinoy</a> |
+    <a href="https://www.foxyfolksy.com/" target="_blank">Foxy Folksy</a>
+  </p>
+  <p>&copy; Jeffrey R. Verceles BSIT 3-M <br>Food Webpage</p>
+</footer>
+
+</body>
+</html>

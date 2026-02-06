@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Spaghetti</title>
+<style>
+body {
+  padding: 40px;
+  font-family: "Poppins", sans-serif;
+  background: #121212;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.card {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  background: #1e1e1e;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+h1 { color: #ff6f61; margin-top: 0; }
+h3 { color: #ffa07a; }
+p, li { color: #cccccc; }
+ul { padding-left: 20px; }
+
+img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+a img {
+  border: 3px solid #ff6f61;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+a img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(255,111,97,0.6);
+}
+
+button {
+  margin-top: 25px;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #ff6f61;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover { background: #ff998a; }
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 16px;
+}
+
+footer a {
+  color: #ff6f61;
+  text-decoration: underline;
+}
+
+footer a:hover { color: #ff998a; }
+
+@media (max-width: 768px) {
+  .card { flex-direction: column; align-items: center; text-align: center; }
+  img { max-width: 100%; }
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div>
+    <h1>Filipino Spaghetti</h1>
+    <p>Sweet-style Filipino spaghetti, typically served with hotdogs and ground meat.</p>
+
+    <h3>Ingredients</h3>
+    <ul>
+      <li>Spaghetti noodles</li>
+      <li>Tomato sauce</li>
+      <li>Hotdogs</li>
+      <li>Ground beef</li>
+      <li>Cheese</li>
+      <li>Garlic & onions</li>
+    </ul>
+
+    <h3>Cooking Method</h3>
+    <p>Cook pasta, sauté garlic, onions, beef and hotdogs, add tomato sauce, simmer, then mix with pasta and top with cheese.</p>
+
+    <button onclick="window.location.href='index.html'">Back to Main Page</button>
+  </div>
+
+  <div>
+    <a href="https://ph.pinterest.com/pin/49187820926115281/" target="_blank">
+      <img src="spaghetti.jpg" alt="Filipino Spaghetti">
+    </a>
+  </div>
+</div>
+
+<footer>
+  <a href="https://www.panlasangpinoy.com/filipino-spaghetti-recipe/" target="_blank">Reference: Panlasang Pinoy – Filipino Spaghetti</a>
+</footer>
+
+</body>
+</html>
