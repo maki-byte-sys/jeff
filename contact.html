@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Contact Us</title>
@@ -10,78 +9,49 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-}
+}.container { max-width: 900px; margin: 80px auto 40px auto; padding: 40px; background: #1e1e1e; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.5); text-align: center; }
 
-.container {
-  max-width: 900px;
-  margin: 80px auto;
-  padding: 40px;
-  background: #1e1e1e;
-  border-radius: 20px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
-  text-align: center;
-}
+h1 { color: #ff6f61; margin-bottom: 20px; }
 
-h1 {
-  color: #ff6f61;
-  margin-bottom: 20px;
-}
+p { font-size: 18px; line-height: 1.7; color: #cccccc; margin: 10px 0; }
 
-p {
-  font-size: 18px;
-  line-height: 1.7;
-  color: #cccccc;
-  margin: 10px 0;
-}
+.container a { color: #ff6f61; text-decoration: underline; }
 
-button {
-  margin-top: 30px;
-  padding: 12px 25px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  background: #ff6f61;
-  color: white;
-  cursor: pointer;
-  transition: 0.3s;
-}
+.container a:hover { color: #ff998a; }
 
-button:hover {
-  background: #ff998a;
-}
+button { margin-top: 30px; padding: 12px 25px; font-size: 16px; border: none; border-radius: 8px; background: #ff6f61; color: white; cursor: pointer; transition: 0.3s; }
 
-footer {
-  text-align: center;
-  margin-top: 50px;
-  padding: 20px;
-  font-size: 16px;
-}
+button:hover { background: #ff998a; }
 
-footer a {
-  color: #ff6f61;
-  text-decoration: underline;
-}
+  .map-section { max-width: 900px; margin: 0 auto 60px auto; padding: 30px; background: #1e1e1e; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.5); }
 
-footer a:hover {
-  color: #ff998a;
-}
-</style>
+.map-title { text-align: center; color: #ff6f61; margin-bottom: 15px; font-size: 24px; }
+
+.map-container { width: 100%; height: 400px; border-radius: 15px; overflow: hidden; border: 2px solid #ff6f61; }
+
+.map-container iframe { width: 100%; height: 100%; border: 0; filter: grayscale(20%) brightness(90%); }
+
+footer { text-align: center; margin-top: 20px; padding: 20px; font-size: 16px; color: #cccccc; }
+
+footer span { color: #ff6f61; } </style>
+
 </head>
-<body>
-
-<div class="container">
+<body><div class="container">
   <h1>Contact Us</h1>
-  <p>Email: <a href="mailto:filipinofoodbliss@email.com">filipinofoodbliss@email.com</a></p>
+  <p>Email: <a href="mailto:filipinofoodbliss@email.com">jeffrey@email.com</a></p>
   <p>Phone: <a href="tel:+639123456789">0912-345-6789</a></p>
-  <p>Follow us on social media for more recipes and updates!</p>
+  <p>Follow us on social media for more recipes and updates!</p><button onclick="window.location.href='index.html'">Back to Home</button>
 
-  <button onclick="window.location.href='index.html'">Back to Home</button>
-</div>
-
-<footer>
-  &copy;Jeffrey R. Verceles| Filipino Food Bliss
-</footer>
-
-</body>
+</div><div class="map-section">
+  <div class="map-title">Our Location</div>
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps?q=binalatongan%20community%20college&output=embed"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</div><footer>
+  &copy; <span>Jeffrey R. Verceles</span> | Filipino Food Bliss
+</footer></body>
 </html>
-
